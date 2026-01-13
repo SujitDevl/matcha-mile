@@ -1,6 +1,4 @@
-# ☕ Cafe Grind
-
-## 📌 Overview
+# Cafe Grind
 
 **Cafe Grind** is a modern, responsive café website built with **React** and contemporary frontend practices.  
 The project simulates a real-world business landing page with dynamic UI behavior, focusing on clean design, reusable components, and maintainable architecture.
@@ -9,12 +7,7 @@ This project was intentionally designed to strengthen practical React skills whi
 
 ---
 
-## 🚀 Live Demo
-> Coming soon
-
----
-
-## 🛠 Tech Stack
+## ⚙️ Technologies
 
 - **React** – Component-based UI development
 - **JavaScript (ES6+)** – Application logic and interactivity
@@ -48,27 +41,6 @@ This project was intentionally designed to strengthen practical React skills whi
 - LocalStorage integration
 - Responsive and accessible UI design
 - Maintainable CSS architecture
-
----
-
-## 🎯 Project Goals
-
-- Build a realistic frontend project beyond basic CRUD
-- Apply React concepts in a practical, real-world scenario
-- Improve code readability and scalability
-- Strengthen problem-solving and UI logic skills
-- Prepare confidently for frontend technical interviews
-
----
-
-## ⚙️ Implementation Highlights
-
-- Menu items are rendered dynamically to avoid hard-coded UI
-- Business logic is extracted into custom hooks for clarity
-- State is kept minimal and derived where possible
-- UI components are designed to be reusable and flexible
-- Layout is optimized for different screen sizes
-- User preferences are persisted for better UX
 
 ---
 
