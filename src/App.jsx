@@ -1,8 +1,8 @@
 import React from "react";
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-red-100">
-      <h1 className="text-4xl font-bold text-gray-800">Cafe Grind ☕</h1>
+    <div className="min-h-screen bg-stone-50 text-stone-900">
+      <h1 className="text-4xl font-bold text-center py-10">Cafe Grind ☕</h1>
     </div>
   );
 }
