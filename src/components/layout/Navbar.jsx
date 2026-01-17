@@ -16,7 +16,7 @@ function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6 text-stone-700 font-medium">
-            <a href="#" className="hover:text-amber-900 transition">
+            <a href="" className="hover:text-amber-900 transition">
               Home
             </a>
             <a href="#" className="hover:text-amber-900 transition">
