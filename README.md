@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cafe Grind
 
 **Cafe Grind** is a modern, responsive café website built with **React** and contemporary frontend practices.  
