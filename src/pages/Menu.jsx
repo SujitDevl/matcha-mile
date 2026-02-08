@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/layout/Container";
 import CoffeeList from "../components/coffee/CoffeeList";
 
-function Menu() {
+function Menu({ addToCart }) {
   return (
     <section className="py-16">
       <Container>
@@ -12,7 +12,7 @@ function Menu() {
           Carefully crafted beverages made from premium coffee beans.
         </p>
 
-        <CoffeeList />
+        <CoffeeList addToCart={addToCart} />
       </Container>
     </section>
   );

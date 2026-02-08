@@ -3,7 +3,7 @@ import { useState } from "react";
 import coffees from "../../data/coffees";
 import CoffeeCard from "./CoffeeCard";
 
-function CoffeeList() {
+function CoffeeList({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const filteredCoffees =
@@ -60,6 +60,7 @@ function CoffeeList() {
             name={coffee.name}
             description={coffee.description}
             price={coffee.price}
+            onAddToCart={() => addToCart(coffee)}
           />
         ))}
       </div>
