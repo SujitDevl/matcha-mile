@@ -1,30 +1,16 @@
 import React from "react";
 
-function CoffeeCard({
-  name,
-  description,
-  price,
-  image,
-  onAddToCart,
-}) {
+function CoffeeCard({ name, description, price, image, onAddToCart }) {
   return (
-    <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition">
+    <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
       {/* Image */}
-      <img
-        src={image}
-        alt={name}
-        className="h-60 w-full object-cover"
-      />
+      <img src={image} alt={name} className="h-60 w-full object-cover" />
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-1">
-          {name}
-        </h3>
+        <h3 className="text-xl font-semibold mb-1">{name}</h3>
 
-        <p className="text-stone-600 text-sm mb-4">
-          {description}
-        </p>
+        <p className="text-stone-600 text-sm mb-4">{description}</p>
 
         <div className="flex items-center justify-between">
           {/* Price Badge */}

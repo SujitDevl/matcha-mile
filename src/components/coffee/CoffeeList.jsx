@@ -1,59 +1,47 @@
-import React from "react";
 import { useState } from "react";
 import coffees from "../../data/coffees";
 import CoffeeCard from "./CoffeeCard";
+import React from "react";
 
 function CoffeeList({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
+  const categories = [
+    { label: "All", value: "all" },
+    { label: "Hot", value: "hot" },
+    { label: "Cold", value: "cold" },
+    { label: "Special", value: "special" },
+  ];
+
   const filteredCoffees =
     selectedCategory === "all"
       ? coffees
-      : coffees.filter((coffee) => coffee.category === selectedCategory);
-
-  function getButtonClass(category) {
-    return `px-4 py-2 border rounded-md transition ${
-      selectedCategory === category
-        ? "bg-amber-900 text-white"
-        : "bg-white text-stone-700 hover:bg-stone-100"
-    }`;
-  }
+      : coffees.filter(
+          (coffee) => coffee.category === selectedCategory
+        );
 
   return (
     <>
-      {/* Filter Buttons */}
-      <div className="flex gap-4 mb-8">
-        <button
-          onClick={() => setSelectedCategory("all")}
-          className={getButtonClass("all")}
-        >
-          All
-        </button>
-
-        <button
-          onClick={() => setSelectedCategory("hot")}
-          className={getButtonClass("hot")}
-        >
-          Hot
-        </button>
-
-        <button
-          onClick={() => setSelectedCategory("cold")}
-          className={getButtonClass("cold")}
-        >
-          Cold
-        </button>
-
-        <button
-          onClick={() => setSelectedCategory("special")}
-          className={getButtonClass("special")}
-        >
-          Special
-        </button>
+      {/* Category Filters */}
+      <div className="flex gap-3 mb-14 flex-wrap">
+        {categories.map((cat) => (
+          <button
+            key={cat.value}
+            onClick={() => setSelectedCategory(cat.value)}
+            className={`px-5 py-2 rounded-full text-sm font-medium transition
+              ${
+                selectedCategory === cat.value
+                  ? "bg-emerald-700 text-white"
+                  : "bg-white text-stone-600 hover:bg-emerald-100"
+              }`}
+          >
+            {cat.label}
+          </button>
+        ))}
       </div>
 
-      {/* Coffee Cards */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Coffee Grid */}
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {filteredCoffees.map((coffee) => (
           <CoffeeCard
             key={coffee.id}

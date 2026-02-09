@@ -1,17 +1,23 @@
-import React from "react";
 import Container from "../components/layout/Container";
 import CoffeeList from "../components/coffee/CoffeeList";
+import React from "react";
 
 function Menu({ addToCart }) {
   return (
-    <section className="py-16">
+    <section className="bg-emerald-50 py-24">
       <Container>
-        <h1 className="text-3xl font-bold mb-4">Our Coffee Menu ☕</h1>
+        {/* Header */}
+        <div className="max-w-2xl mb-16">
+          <h1 className="text-4xl font-bold text-stone-900 mb-4">
+            Matcha Mile Menu 🌿
+          </h1>
+          <p className="text-lg text-stone-600">
+            Thoughtfully brewed coffee and matcha drinks —
+            crafted for calm moments and mindful living.
+          </p>
+        </div>
 
-        <p className="text-stone-600 mb-10 max-w-2xl">
-          Carefully crafted beverages made from premium coffee beans.
-        </p>
-
+        {/* Coffee List */}
         <CoffeeList addToCart={addToCart} />
       </Container>
     </section>
