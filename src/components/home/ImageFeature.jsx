@@ -13,19 +13,16 @@ function ImageFeature() {
           />
 
           <div>
-            <h2 className="text-3xl font-bold mb-6">
-              Crafted With Intention
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Crafted With Intention</h2>
 
             <p className="text-stone-600 mb-4">
-              At Matcha Mile, every cup is brewed slowly, thoughtfully,
-              and sustainably — because coffee should feel good,
-              not rushed.
+              At Matcha Mile, every cup is brewed slowly, thoughtfully, and
+              sustainably — because coffee should feel good, not rushed.
             </p>
 
             <p className="text-stone-600">
-              We blend modern café culture with mindful living,
-              creating a calm space for focus and connection.
+              We blend modern café culture with mindful living, creating a calm
+              space for focus and connection.
             </p>
           </div>
         </div>

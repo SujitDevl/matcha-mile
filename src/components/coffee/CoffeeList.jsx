@@ -60,6 +60,7 @@ function CoffeeList({ addToCart }) {
             name={coffee.name}
             description={coffee.description}
             price={coffee.price}
+            image={coffee.image}
             onAddToCart={() => addToCart(coffee)}
           />
         ))}

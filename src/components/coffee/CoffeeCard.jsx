@@ -1,21 +1,45 @@
 import React from "react";
 
-function CoffeeCard({ name, description, price, onAddToCart }) {
+function CoffeeCard({
+  name,
+  description,
+  price,
+  image,
+  onAddToCart,
+}) {
   return (
-    <div className="rounded-lg border border-stone-200 p-6 shadow-sm hover:shadow-md transition">
-      <h3 className="text-xl font-semibold">{name}</h3>
+    <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition">
+      {/* Image */}
+      <img
+        src={image}
+        alt={name}
+        className="h-60 w-full object-cover"
+      />
 
-      <p className="mt-2 text-stone-600 text-sm">{description}</p>
+      {/* Content */}
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-1">
+          {name}
+        </h3>
 
-      <div className="mt-4 flex items-center justify-between">
-        <span className="font-bold text-amber-900">₹{price}</span>
+        <p className="text-stone-600 text-sm mb-4">
+          {description}
+        </p>
 
-        <button
-          onClick={onAddToCart}
-          className="text-sm font-medium text-amber-900 hover:underline"
-        >
-          Add to cart
-        </button>
+        <div className="flex items-center justify-between">
+          {/* Price Badge */}
+          <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-semibold">
+            ₹{price}
+          </span>
+
+          {/* Add to Cart Button */}
+          <button
+            onClick={onAddToCart}
+            className="bg-emerald-700 text-white text-sm px-4 py-2 rounded-full hover:bg-emerald-600 transition"
+          >
+            Add to cart
+          </button>
+        </div>
       </div>
     </div>
   );

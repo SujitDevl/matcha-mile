@@ -16,8 +16,8 @@ function Gallery() {
         </h2>
 
         <p className="text-stone-600 text-center mb-12 max-w-xl mx-auto">
-          A calm space designed for slow mornings, deep focus,
-          and meaningful conversations.
+          A calm space designed for slow mornings, deep focus, and meaningful
+          conversations.
         </p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">

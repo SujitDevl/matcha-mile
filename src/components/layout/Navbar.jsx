@@ -12,8 +12,11 @@ function Navbar({ cartCount }) {
         {/* Top Bar */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-amber-900">
-            Cafe Grind
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-2xl font-bold tracking-wide text-emerald-700">
+              MM
+            </span>
+            <span className="text-xl">🌿</span>
           </Link>
 
           {/* Desktop Nav */}

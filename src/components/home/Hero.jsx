@@ -15,8 +15,11 @@ function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-stone-600 max-w-xl">
-              Matcha Mile is a modern café experience focused on calm,
-              quality brews, and intentional moments.
+              <strong className="font-medium text-stone-900">
+                MM 🌿 (Matcha Mile)
+              </strong>{" "}
+              is a modern café experience focused on calm, quality brews, and
+              intentional moments.
             </p>
 
             <div className="mt-10 flex gap-4">
