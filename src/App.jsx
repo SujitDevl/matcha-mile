@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import React from "react";
@@ -21,9 +20,7 @@ function App() {
 
   // Remove drink by index
   const removeFromCart = (index) => {
-    setCart((prevCart) =>
-      prevCart.filter((_, i) => i !== index)
-    );
+    setCart((prevCart) => prevCart.filter((_, i) => i !== index));
   };
 
   // Clear entire order
@@ -37,14 +34,11 @@ function App() {
       <Navbar cartCount={cart.length} />
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main className=".flex-grow {flex-grow: 1;}">
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route
-            path="/menu"
-            element={<Menu addToCart={addToCart} />}
-          />
+          <Route path="/menu" element={<Menu addToCart={addToCart} />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

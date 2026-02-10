@@ -1,5 +1,6 @@
 import Container from "../components/layout/Container";
 import { Link } from "react-router-dom";
+import React from "react";
 
 function Order({ cart, removeFromCart, clearCart }) {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
@@ -7,9 +8,7 @@ function Order({ cart, removeFromCart, clearCart }) {
   return (
     <section className="py-24 bg-emerald-50">
       <Container>
-        <h1 className="text-4xl font-bold mb-10">
-          Order Online 🌿
-        </h1>
+        <h1 className="text-4xl font-bold mb-10">Order Online 🌿</h1>
 
         {cart.length === 0 ? (
           <div>
@@ -33,17 +32,13 @@ function Order({ cart, removeFromCart, clearCart }) {
                   className="bg-white p-6 rounded-2xl shadow-sm flex items-center justify-between"
                 >
                   <div>
-                    <h3 className="font-semibold text-lg">
-                      {item.name}
-                    </h3>
-                    <p className="text-stone-600 text-sm">
-                      ₹{item.price}
-                    </p>
+                    <h3 className="font-semibold text-lg">{item.name}</h3>
+                    <p className="text-stone-600 text-sm">₹{item.price}</p>
                   </div>
 
                   <button
                     onClick={() => removeFromCart(index)}
-                    className="text-sm text-red-500 hover:underline"
+                    className="bg-transparent hover:bg-amber-800 text-emerald-700 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded"
                   >
                     Remove
                   </button>
@@ -53,15 +48,11 @@ function Order({ cart, removeFromCart, clearCart }) {
 
             {/* Summary */}
             <div className="bg-white p-6 rounded-2xl shadow-sm h-fit">
-              <h2 className="text-xl font-semibold mb-4">
-                Order Summary
-              </h2>
+              <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
 
               <div className="flex justify-between mb-6 text-stone-700">
                 <span>Total</span>
-                <span className="font-semibold text-emerald-700">
-                  ₹{total}
-                </span>
+                <span className="font-semibold text-emerald-700">₹{total}</span>
               </div>
 
               <button
