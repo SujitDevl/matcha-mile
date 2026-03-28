@@ -17,8 +17,8 @@ function Navbar({ cartCount }) {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <span className="text-2xl font-semibold italic tracking-wide text-emerald-700 group-hover:scale-105 transition-transform">
-              MM
+            <span className="text-2xl font-semibold text-emerald-700 group-hover:scale-105 transition-transform">
+              Matcha Mile
             </span>
             <span className="text-xl">🌿</span>
           </Link>
