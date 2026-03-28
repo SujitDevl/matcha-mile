@@ -16,8 +16,8 @@ function Hero() {
 
             <p className="mt-6 text-lg text-stone-600 max-w-xl">
               <strong>MM 🌿 (Matcha Mile)</strong> is a modern café brand
-              focused on clean ingredients, matcha based drinks,
-              and intentional coffee moments.
+              focused on clean ingredients, matcha based drinks, and intentional
+              coffee moments.
             </p>
 
             <div className="mt-10 flex gap-4">

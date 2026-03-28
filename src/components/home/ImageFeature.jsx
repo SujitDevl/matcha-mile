@@ -15,19 +15,16 @@ function ImageFeature() {
 
           {/* Text */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">
-              Crafted With Intention
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Crafted With Intention</h2>
 
             <p className="text-stone-600 mb-4">
-              At Matcha Mile, we focus on matcha-forward drinks,
-              slow brewing, and clean flavors that feel calm
-              and balanced.
+              At Matcha Mile, we focus on matcha-forward drinks, slow brewing,
+              and clean flavors that feel calm and balanced.
             </p>
 
             <p className="text-stone-600">
-              Every cup is designed to help you pause, breathe,
-              and enjoy the moment.
+              Every cup is designed to help you pause, breathe, and enjoy the
+              moment.
             </p>
           </div>
         </div>

@@ -16,8 +16,7 @@ function Gallery() {
         </h2>
 
         <p className="text-stone-600 text-center mb-12 max-w-xl mx-auto">
-          A visual taste of our matcha-forward drinks and
-          slow coffee culture.
+          A visual taste of our matcha-forward drinks and slow coffee culture.
         </p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
