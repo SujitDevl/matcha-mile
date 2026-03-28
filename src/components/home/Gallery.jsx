@@ -30,6 +30,7 @@ function Gallery() {
           ))}
         </div>
       </Container>
+          Inside Matcha Mile
     </section>
   );
 }
